@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clarence Lagamia</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <button id="themeBtn" style="position:fixed; top:10px; right:10px; z-index:1000;">Toggle Dark Mode</button>
+
+    <header class="navbar">
+        <p id="greetingMsg" style="font-weight:bold; color:#007bff;"></p>
+        <h1 class="name-title">Clarence Lagamia</h1>
+        <p class="job-title" id="jobTitle" style="display:inline;">Web Developer | Student</p>
+        <button id="editJobBtn" class="small-btn">Edit</button>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="main-content">
+        <div class="left-column" id="home">
+            <img class="profile-img" src="Image.jpg" alt="Profile Image" />
+
+            <h3>Contact Information</h3>
+            <p>Email:
+                <a class="contact-link" href="mailto:lagamiajm@students.nu-fairview.edu.ph">lagamiajm@students.nu-fairview.edu.ph</a>
+            </p>
+            <p>Phone:
+                <a class="contact-link" href="tel:+63916***010">+63 916***010</a>
+            </p>
+            <p>Address: Caloocan City, Philippines</p>
+
+            <h3>Education</h3>
+            <p>BSIT - National University Fairview</p>
+
+            <h3>Skills</h3>
+            <button id="toggleSkillsBtn" class="small-btn" style="margin-bottom:10px;">Hide Skills</button>
+            
+            <ul class="skills-list" id="skillsSection">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>Hardwares & Softwares</li>
+            </ul>
+
+            <h3>Projects</h3>
+            <ul>
+                <li>Personal Portfolio Website</li>
+                <li>Simple To-Do Web App</li>
+                <li>Calculator App (HTML/JS)</li>
+            </ul>
+        </div>
+
+        <div class="right-column">
+            <section id="about">
+                <h3>About Me</h3>
+                <p class="about-text">
+                    My name is Clarence Lagamia, I am an IT student who enjoys building and experimenting with Technology.
+                    I am passionate about learning new technologies and improving my front end skills.
+                </p>
+            </section>
+
+            <section id="contact">
+                <h3>Message Me</h3>
+
+                <form class="message-form" onsubmit="return validateForm()">
+                    <label>Name</label>
+                    <input type="text" name="name" id="nameField" />
+
+                    <label>Email</label>
+                    <input type="email" name="email" id="emailField" />
+
+                    <label>Subject</label>
+                    <input type="text" name="subject" />
+
+                    <label>Message</label>
+                    <textarea rows="4" name="message" id="msgBox" maxlength="200"></textarea>
+                    
+                    <p style="font-size:0.9em; color:gray; margin-top:0;">Characters left: <span id="counter">200</span></p>
+
+                    <input type="submit" value="Send Message" />
+                </form>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        IT245 - WEBPROG
+        <p>Today's Date: <span id="dateDisplay"></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f2f2f2;
+    color: #111;
+}
+
+.navbar {
+    text-align: center;
+    padding: 20px 0;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+}
+
+.name-title {
+    margin-bottom: 5px;
+}
+
+.job-title {
+    color: gray;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.navbar nav a:hover {
+    color: white;
+    background: #007bff;
+    border-radius: 5px;
+}
+
+#main-content {
+    display: flex;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    gap: 25px;
+}
+
+.left-column {
+    flex: 1;
+}
+
+.right-column {
+    flex: 2;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px; 
+    object-fit: cover;
+    border: 2px solid #333;
+    margin-bottom: 15px;
+}
+
+.contact-link {
+    color: blue;
+    text-decoration: none;
+    padding: 3px 5px;
+    margin-left: 5px;
+}
+
+.contact-link:hover {
+    color: #0056b3;
+}
+
+.skills-list {
+    background: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.skills-list li {
+    padding: 4px 0;
+}
+
+.about-text {
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.message-form input,
+.message-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.message-form input[type="submit"] {
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.message-form input[type="submit"]:hover {
+    background: #444;
+}
+
+footer {
+    text-align: center;
+    padding: 12px;
+    background: #222;
+    color: white;
+    margin-top: 20px;
+}
+
+
+.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+.dark-mode .navbar, 
+.dark-mode .skills-list {
+    background: #1f1f1f;
+    border-color: #333;
+}
+.dark-mode .navbar nav a {
+    color: #e0e0e0; 
+}
+.dark-mode input, 
+.dark-mode textarea {
+    background: #2b2b2b;
+    color: #fff; 
+    border: 1px solid #444;
+}
+.dark-mode footer {
+    background: #000;
+}
+
+#themeBtn {
+    position: absolute;
+    top: 10px; right: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.small-btn {
+    font-size: 12px; padding: 2px 8px;
+    cursor: pointer; margin-left: 10px;
+    background: #ddd; border: 1px solid #999; border-radius: 4px;
+}
