@@ -154,3 +154,13 @@ footer {
     cursor: pointer; margin-left: 10px;
     background: #ddd; border: 1px solid #999; border-radius: 4px;
 }
+
+body,
+.navbar,
+.skills-list,
+input,
+textarea,
+footer {
+    transition: background 0.3s, color 0.3s;
+}
+
