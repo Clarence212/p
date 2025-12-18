@@ -46,3 +46,12 @@ document.getElementById('dateDisplay').textContent = new Date().toDateString();
 const hours = new Date().getHours();
 let greet = hours < 12 ? "Good Morning!" : (hours < 18 ? "Good Afternoon!" : "Good Evening!");
 document.getElementById('greetingMsg').textContent = greet;
+
+document.querySelectorAll('.navbar nav a').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
