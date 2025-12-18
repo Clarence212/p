@@ -3,14 +3,6 @@ themeBtn.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
 });
 
-const editJobBtn = document.getElementById('editJobBtn');
-const jobTitle = document.getElementById('jobTitle');
-editJobBtn.addEventListener('click', function() {
-    let newTitle = prompt("Enter new job title:", jobTitle.textContent);
-    if (newTitle && newTitle.trim() !== "") {
-        jobTitle.textContent = newTitle;
-    }
-});
 
 const toggleSkillsBtn = document.getElementById('toggleSkillsBtn');
 const skillsSection = document.getElementById('skillsSection');
